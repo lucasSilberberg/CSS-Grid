@@ -13,6 +13,36 @@
 .grid-container.example-3 {
   grid-template-columns: auto 50% auto;
 }
+.grid-container.example-4 {
+  grid-template-areas: 'item-1 item-1 item-1 item-1 item-1 item-1' 'item-2 item-3 item-3 item-3 item-4 item-4' 'item-2 item-5 item-5 item-6 item-6 item-6' 'item-2 item-7 item-7 item-6 item-6 item-6' 'item-8 item-8 item-8 item-9 item-9 item-9';
+}
+.grid-container.example-4 .item-1 {
+  grid-area: item-1;
+}
+.grid-container.example-4 .item-2 {
+  grid-area: item-2;
+}
+.grid-container.example-4 .item-3 {
+  grid-area: item-3;
+}
+.grid-container.example-4 .item-4 {
+  grid-area: item-4;
+}
+.grid-container.example-4 .item-5 {
+  grid-area: item-5;
+}
+.grid-container.example-4 .item-6 {
+  grid-area: item-6;
+}
+.grid-container.example-4 .item-7 {
+  grid-area: item-7;
+}
+.grid-container.example-4 .item-8 {
+  grid-area: item-8;
+}
+.grid-container.example-4 .item-9 {
+  grid-area: item-9;
+}
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
