@@ -1,9 +1,9 @@
-
-.text-align{
+.text-align {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .grid-container {
     display: grid;
     grid-gap: 10px;
@@ -19,12 +19,10 @@
         grid-template-columns: auto 50% auto; // Columnas automaticas
     }
     &.example-4 {
-        grid-template-areas: 
-        'item-1 item-1 item-1 item-1 item-1 item-1' 
-        'item-2 item-3 item-3 item-3 item-4 item-4'
-        'item-2 item-5 item-5 item-6 item-6 item-6' 
-        'item-2 item-7 item-7 item-6 item-6 item-6'
-        'item-8 item-8 item-8 item-9 item-9 item-9';
+        grid-template-columns: repeat(3, 1fr); // Columnas automaticas
+    }
+    &.example-5 {
+        grid-template-areas: 'item-1 item-1 item-1 item-1 item-1 item-1' 'item-2 item-3 item-3 item-3 item-4 item-4' 'item-2 item-5 item-5 item-6 item-6 item-6' 'item-2 item-7 item-7 item-6 item-6 item-6' 'item-8 item-8 item-8 item-9 item-9 item-9';
         .item-1 {
             grid-area: item-1;
         }
